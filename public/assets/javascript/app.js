@@ -39,36 +39,12 @@ $(document).on('click', '#scrape', function(){
 
 });
 
-// $(document).on('click' '#get-notes', function(){
-// 	$ajax({
-// 		method: 'GET',
-// 		url: '/scrape'
-// 	}).done(function(res){
-// 		alert(res);
-// 		$.get('/', function(){
-// 			$('#results').empty();
-// 			getJson();
-// 		});
-// 	});
-// });
 
-// $(document).on('click', '#get-notes', function(){
-// 	$.ajax({
-// 		method: 'GET',
-// 		url: '/scrape' + id
-// 	}).done(function(res){
-// 		alert(res);
-// 		$.get("/", function() {
-//   		$('#results').empty();
-//   		getJson();
-// 	});
-// });
 
 
 // main menu -- will probably delete
 $(document).on('click', '#home', function(){
 	$.get("/", function() {
-  // Call our function to generate a table body
   $('#results').empty();
 });
 
@@ -96,7 +72,6 @@ $(document).on('click', '.note', function(){
 	var selected =$(this).parent();
 	var id = selected.attr('data-id')
 	console.log('the id is ' + id);
-	// call a function to return the title of the article
 
 	$.ajax({
 		method: 'GET',
@@ -128,15 +103,6 @@ $(document).on('click', '#articles', function(){
 });
 
 
-
-// function gettArticles(articles) {
-// 	$('#results').empty();
-// 	articles.forEach(function(article){
-// 		$('#results').append(
-// 			"<p class='dataentry' data-id=" + article._id + "><span class='dataTitle' data-id=" + article._id + ">" + article.title + "</span></p>"
-// 			)
-// 	});
-// }
 
 
 function getArticles(articles) {
