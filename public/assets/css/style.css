@@ -1,0 +1,57 @@
+#masthead {
+	min-height: 60px;
+}
+
+ul, li {
+	min-height: 60px;
+}
+
+
+h1 {
+	font-size: 45px;
+	font-weight: bold;
+}
+
+.navbar {
+	min-height: 100px;
+}
+
+
+.news {
+	margin-top: 20px;
+}
+
+
+#actionbutton, p, .form-group, #note-label, .row, h3, h5 {
+	text-align: center;
+}
+
+#note {
+	width: 100%;
+	height: 200%
+}
+
+textarea, input {
+	display: block;
+	width: 100%;
+	background-color: #FCF5C7;
+}
+
+#note {
+	height: 150px;
+	font-size: 18px;
+}
+
+.modal-body {
+	height: 250px;
+}
+
+
+h2 {
+	color: red;
+}
+
+body, #results {
+	background-color:  #ffc000;
+	border-color: #ffc000;
+}
